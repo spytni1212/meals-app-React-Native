@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Button, FlatList, TouchableOpacity, Platform, TouchableNativeFeedback } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Platform, TouchableNativeFeedback } from 'react-native'
 
 const CategoryGridTile = props => {
     let TouchableCmp = TouchableOpacity;
