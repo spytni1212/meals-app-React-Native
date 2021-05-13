@@ -13,9 +13,8 @@ const MealDetailScreen = props => {
 
     return (
         <View style={styles.screen}>
-            <Text>The Meal Detail Screen</Text>
             <Text>{selectedMeal.title}</Text>
-            <Button title='go to main' onPress={()=> {
+            <Button title='Go back to Categories' onPress={()=> {
                 props.navigation.popToTop()
             }} />
         </View>
@@ -28,7 +27,7 @@ MealDetailScreen.navigationOptions = navigationData => {
 
     return {
         headerTitle: selectedMeal.title,
-        headerRight: <HeaderButtons HeaderButtonComponent={HeaderButton}>
+        headerRight: () => <HeaderButtons HeaderButtonComponent={HeaderButton}>
             <Item title='Favorite' iconName='ios-star' onPress={() => {}}/>
         </HeaderButtons>
     }
