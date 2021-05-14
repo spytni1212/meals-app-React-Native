@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Button, FlatList, TouchableOpacity } from 'react-native'
+import { StyleSheet, FlatList } from 'react-native'
 import { HeaderButtons, Item } from 'react-navigation-header-buttons'
 
 import { CATEGORIES } from '../data/dummy-data'
@@ -50,15 +50,5 @@ CategoriesScreen.navigationOptions = navData => {
         )
     }    
 }
-
-const styles = StyleSheet.create({
-    screen: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    
-})
 
 export default CategoriesScreen;
